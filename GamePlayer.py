@@ -16,8 +16,8 @@ np.set_printoptions(threshold=np.inf)
 
 keyboard = Controller()
 
-negExamples = os.path.join(r"C:\Users\home\Desktop\Artifcial intelligence\ML\data\dinodata\neg examples")
-posExamples = os.path.join(r"C:\Users\home\Desktop\Artifcial intelligence\ML\data\dinodata\pos examples")
+negExamples = os.path.join(r"data/neg examples")
+posExamples = os.path.join(r"data/pos examples")
 
 
 negarray = np.zeros((109,92075))
@@ -25,7 +25,7 @@ negarray = np.zeros((109,92075))
 n = 0
 
 for neg in tqdm(os.listdir(negExamples)):
-    file = imread(f"C:/Users/home/Desktop/Artifcial intelligence/ML/data/dinodata/neg examples/{neg}",as_gray=True).flatten()
+    file = imread(f"data/pos examples/{neg}",as_gray=True).flatten()
     negarray[n,:] = file
     n +=1
 
@@ -34,7 +34,7 @@ posarray = np.zeros((117,92075))
 m = 0
 
 for pos in tqdm(os.listdir(negExamples)):
-    file = imread(f"C:/Users/home/Desktop/Artifcial intelligence/ML/data/dinodata/pos examples/{pos}",as_gray=True).flatten()
+    file = imread(f"data/pos examples/{pos}",as_gray=True).flatten()
     posarray[m,:] = file
     m +=1
 
