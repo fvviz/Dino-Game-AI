@@ -22,6 +22,6 @@ Here is a youtube video of the project implementation:
 if you have any questions regarding this project , you can contact me on discord : `fwiz#6999` (my discord username)
 or you can join this discord server : https://discord.gg/bF8sbqG
 
-#LICENSE
+# LICENSE
 
 This project is available under the terms of the MIT License
